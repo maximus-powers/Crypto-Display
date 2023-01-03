@@ -20,12 +20,12 @@ HEADERS = {
   'X-CMC_PRO_API_KEY': CMC_SECRET,
 }
 
-# CALLING THE URL, AND PUT THE DATA ON THE DISPLAY (THIS IS LIKE A SESSION BETWEEN THE DISPLAY AND URL)
+# CALLING THE URL, AND INITIALIZE METHOD TO DISPLAY DATA (THIS IS LIKE A SESSION BETWEEN THE DISPLAY AND URL)
 matrixportal = MatrixPortal(
     url=DATA_SOURCE,
     headers=HEADERS,
     status_neopixel=board.NEOPIXEL,
-    #default_bg=cwd + "/bitcoin_background.bmp",
+    #default_bg=cwd + "/blahblahblah.bmp",
     debug=False,
     rotation=180,
     )
@@ -48,6 +48,7 @@ class Display:
     SYM_DICT = {}
     counter = 0
 
+                            # make this counter a different one from the self one, just to clean up the code a little
     def refresh(self):
         self.counter = 0
         r = matrixportal.fetch()
@@ -73,10 +74,10 @@ class Display:
 
     def post(self):
         matrixportal.set_text(self.SYM_DICT[self.counter]['symbol'] + ' ' + self.SYM_DICT[self.counter]['day_change'] + '\n' + '$' + str(self.SYM_DICT[self.counter]['price']))
-        
+# --------------------------------------------------------------------------------------------------
+
 
 display = Display()        
-
 
 # Loop to run display
 while True:
