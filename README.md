@@ -1,6 +1,6 @@
 # Crypto-Display
 
-/images/crypto-display.jpg
+<img width="951" alt="Screen Shot 2023-01-02 at 9 27 35 PM" src="https://user-images.githubusercontent.com/29261251/210293040-7c22fc54-804b-4413-aadb-e35b94b0262c.png">
 
 ### The ticker displays one cryptocurrency at a time, showing: symbol, price, and 24hr % change.
 
