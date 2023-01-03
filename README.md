@@ -4,7 +4,7 @@
 
 ### The ticker displays one cryptocurrency at a time, showing: symbol, price, and 24hr % change.
 
-This document breaks down processes used to call live market data, parse it, and post it to the board (in technical terms). For a simplified logic breakdown please check out my Medium article.
+This document breaks down processes used to call live market data, parse it, and post it to the board (in technical terms). For a simplified logic breakdown please check out my [Medium article](https://medium.com/@maximuspowersdev/building-a-crypto-price-ticker-bb742529582).
 
 ------------------------------------------------
 
